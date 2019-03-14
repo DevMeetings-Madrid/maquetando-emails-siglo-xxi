@@ -1,49 +1,325 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<title>Maquetando emails en el siglo XXI</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<!-- intro -->
+			<section>
+				<h2>Maquetando emails en el siglo XXI</h2>
+				<p>
+					<small>By <a href="https://www.linkedin.com/in/fran-linde-blazquez/" target="_blank">Fran Linde Blázquez</a></small>
+				</p>
+			</section>
+			<!-- END intro -->
+
+			<!-- el proceso -->
+			<section>
+				<h2>El ciclo de vida de un email:</h2>
+
+				<table class="steps-table">
+					<tbody>
+						<tr>
+							<td class="fragment">UX/UI</td>
+							<td class="fragment">-> Front</td>
+							<td class="fragment">-> ESP</td>
+							<td class="fragment">-> Visualiz.</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p class="fragment">TODOS son problemáticos</p>
+			</section>
+			<!-- el proceso -->
+
+			<!-- UX problema -->
+			<section>
+				<h2>UX / UI (problema)</h2>
+				<p class="fragment">No han diseñado emails en su vida Hulio</p>
+				<p class="fragment">No saben las limitaciones...</p>
+				<p class="fragment">Tamaños?</p>
+				<p class="fragment">Fuentes?</p>
+				<p class="fragment">Imágenes?</p>
+				<p class="fragment">Videos!?</p>
+				<p class="fragment">Diseños que no se pueden llevar a cabo</p>
+			</section>
+			<!-- UX problema -->
+
+			<!-- UX solución -->
+			<section>
+				<h2>UX / UI (solución)</h2>
+				<p class="fragment">Debemos transmitirles esas limitiaciones</p>
+				<p class="fragment">No solo con emails. También webs, apps...</p>
+			</section>
+			<!-- UX solución -->
+
+			<!-- Front problema -->
+			<section>
+				<h2>Front-End (problema)</h2>
+				<p class="fragment">Tampoco han maquetado en un mail en su vida Hulio</p>
+				<p class="fragment">Tampoco conocen las limitaciones...</p>
+				<p class="fragment">¡Para eso estamos aquí!</p>
+			</section>
+			<!-- Front problema -->
+
+			<!-- Front solución -->
+			<section>
+				<h2>Front-End (solución)</h2>
+				<p class="fragment">La abordamos al final que va a llevar rato...</p>
+			</section>
+			<!-- Front solución -->
+
+			<!-- ESPS problema -->
+			<section>
+				<h2>ESP's (problema)</h2>
+				<p class="fragment">Múltiples ESP's (Email service providers)</p>
+				<p class="fragment">Modifican HTML: links, píxeles, layout... a su manera</p>
+
+				<div class="row fragment">
+					<div class="col-3"><img class="img-white-bg" src="./img/number-of-email-platforms-used-chart-01.png" alt=""></div>
+					<div class="col-2">
+						<p>Número de ESPs usados por <u>una misma empresa</u></p>
+						<p>Fuente: Litmus</p>
+					</div>
+				</div>
+
+				<p class="fragment"></p>
+			</section>
+			<!-- ESPS problema -->
+
+			<!-- ESPS solucion -->
+			<section>
+				<h2>ESP's (solución)</h2>
+				<p class="fragment">No vamos a cambiar otros departamentos...</p>
+				<p class="fragment">Pero si pudiéramos elegir... ESPs transparentes</p>
+				<p class="fragment">Posibilidad de integrar la maqueta y el ESP</p>
+				<p class="fragment">Maquetaciones "resistentes"</p>
+				<p class="fragment">Pruebas <u>integradas</u></p>
+			</section>
+			<!-- ESPS solución -->
+
+			<!-- Visualiz. problema -->
+			<section>
+				<h2>Visualización (problema 1/2)</h2>
+				<p class="fragment">Múltilples clientes</p>
+				<p class="fragment">Web (gmail.com): Safari, Crome, Explorer...</p>
+				<p class="fragment">Escritorio: Outlook, Apple Mail, Thunderbird...</p>
+				<p class="fragment">Móviles: iOS/Android Mail, Gmail App iOS/Android...</p>
+				<p class="fragment">Según Litmus: +1.000 webmails, +250 apps</p>
+			</section>
+
+			<section>
+				<h2>Visualización (problema 2/2)</h2>
+				<p class="fragment">Múltiples tamaños de pantalla</p>
+				<p class="fragment">Cada cliente tiene sus reglas, por ej con imgs:</p>
+				<img src="./img/images-on-and-off.jpg" alt="" class="width-50 fragment">
+			</section>
+			<!-- END Visualiz. problema -->
+
+			<!-- Visualiz. solución -->
+			<section>
+				<h2>Visualización (solución)</h2>
+				<p class="fragment">Lógicamente: mejor maqutación</p>
+				<p class="fragment">¡Vamos a ello!</p>
+			</section>
+			<!-- Visualiz. solución -->
+
+			<!-- Visualiz. Solución -->
+			<section>
+				<h2><u>LA GUÍA</u> de desarrollo</h2>
+				<p><a href="https://templates.mailchimp.com/development/" class="href" target="_blank">https://templates.mailchimp.com/development/</a></p>
+			</section>
+
+			<!-- tips -->
+			<section>
+				<h2>TIPS Generales (1/4)</h2>
+				<p class="fragment">Hacer uso de <a href="https://www.w3.org/TR/CSS2/" target="_blank" class="href">CSS 2.1</a></p>
+				<p class="fragment">Programa como en 1999 (no es broma)</p>
+				<p class="fragment">Revisar soporte:</p>
+				<p class="fragment">Tablas: <a href="https://www.campaignmonitor.com/css/" target="_blank">CampaignMonitor</a> y <a href="https://templates.mailchimp.com/resources/email-client-css-support" target="_blank">MailChimp</a></p>
+				<p class="fragment">Todo debe ir maquetado en tablas</p>
+			</section>
+			<!-- tips -->
+
+			<!-- tips 2 -->
+			<section>
+				<h2>TIPS Generales (2/4)</h2>
+				<p class="fragment">Usa atributos html (width/heigth/border...)</p>
+				<p class="fragment">Evita CSS shorthands</p>
+				<p class="fragment">Los tamaños siempre en px</p>
+				<p class="fragment">Usa celdas vacías para dar espacio</p>
+				<p class="fragment">Incluye css para normalizar</p>
+				<p class="fragment"><u>Desktop</u> first</p>
+			</section>
+			<!-- tips 2 -->
+
+			<!-- tips 2 -->
+			<section>
+				<h2>TIPS Generales (3/4)</h2>
+				<p class="fragment">Aprovecha las etiquetas condiconales [if gte mso 9]</p>
+				<p class="fragment">Usa fallbacks por ej. para fuentes</p>
+				<p class="fragment">Evita imágenes si puedes: Peso, red, 404...</p>
+				<p class="fragment">Si no has leído el consejo anterior... usa alt</p>
+				<p class="fragment">No uses comentarios</p>
+				<p class="fragment">Testea bien antes de enviar...</p>
+			</section>
+			<!-- tips 2 -->
+
+			<!-- estilos en linea -->
+			<section>
+				<h2>TIPS Generales (4/4)</h2>
+				<p class="fragment">Estilos en línea<p>
+				<p class="fragment">Mal soporte de etiqueta &lt;link&gt; -> CSS en línea</p>
+				<div class="code fragment">
+					<p>&lt;p style=&quot;Margin:0;Margin-bottom:24px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.3;margin:0;margin-bottom:24px;padding:0;text-align:left&quot;&gt;</p><p><span class="tab"></span>Gracias por contar vuestras historias y hacer posible que Mates crezca cada d&iacute;a.</p><p>&lt;/p&gt;</p>
+				</div>
+				<p class="fragment">In-Liners Online (pa' un apaño):</p>
+				<p class="fragment"><a href="https://www.campaignmonitor.com/resources/tools/css-inliner/" target="_blank">Campaign Monitor</a></p>
+				<p class="fragment"><a href="https://putsmail.com/inliner" target="_blank">Litmus</a></p>
+				<p class="fragment"><a href="https://templates.mailchimp.com/resources/inline-css/" target="_blank">Mailchimp</a>...</p>
+			</section>
+			<!-- estilos en linea -->
+
+			<!-- malas practicas -->
+			<section>
+				<h1>¡PARECE UNA LISTA DE MALAS PRÁCTICAS!</h1>
+			</section>
+			<!-- malas practicas -->
+
+			<!-- css especifico Outlook -->
+			<section>
+				<h2>Estilos espec. (Oulook):</h2>
+				<p class="fragment">Outlook.com / Hotmail todo bajo clase .ExternalClass</p>
+				<p class="fragment">Crea link "ver en.." -> #outlook a{ display: none; }</p>
+				<p class="fragment">Más padding -> table{ mso-table-rspace:0pt; }</p>
+				<p class="fragment">Redimensiona img { -ms-interpolation-mode:bicubic; }</p>
+			</section>
+			<!-- css especifico Outlook -->
+
+			<!-- css especifico ios -->
+			<section>
+				<h2>Estilos espec. (iOS / OSX):</h2>
+				<p class="fragment">Letra -> body{ -webkit-text-size-adjust:100%; }</p>
+				<p class="fragment">&lt;meta content=&quot;telephone=no&quot;&gt;</p>
+			</section>
+			<!-- css especifico ios -->
+
+			<!-- lista infinita de css especifico -->
+			<section>
+				<h2>Podríamos seguir con ...</h2>
+				<p class="fragment">Android</p>
+				<p class="fragment">Windows Mobile</p>
+				<p class="fragment">Gmail</p>
+				<p class="fragment">Thunderbird</p>
+				<p class="fragment">Creo que se entiende... ;)</p>
+			</section>
+			<!-- lista infinita de css especifico -->
+
+			<!-- stacks de desarrollo -->
+			<section>
+				<h2>¿Qué hacemos?</h2>
+				<p class="fragment">Introducir un stack de desarrollo con:</p>
+				<p class="fragment">CSS normalizado</p>
+				<p class="fragment">Inliner automático</p>
+				<p class="fragment">Layouts probados... ¡y responsives!</p>
+				<p><a href="https://foundation.zurb.com/emails.html" class="fragment" target="_blank">Zurb</a> / <a href="https://mjml.io/" class="fragment" target="_blank">MJML</a></p>
+				<p class="fragment">Pruebas "a saco" -> <a href="https://litmus.com/" class="fragment" target="_blank">Limtus</a> / <a href="https://mailchimp.com/" class="fragment" target="_blank">Mailchimp</a></p>
+			</section>
+			<!-- stacks de desarrollo -->
+
+			<section>
+				<h1>DEMO ZURB + LITMUS</h1>
+			</section>
+
+			<!-- links -->
+			<section>
+				<h2>Curiosidades / Links</h2>
+				<p><a href="https://backgrounds.cm/" class="fragment" target="_blank">Outlook BGs con VML</a></p>
+				<p><a href="https://www.email-standards.org" class="fragment" target="_blank">Email Standards</a></p>
+				<p><a href="https://24ways.org/2009/rock-solid-html-emails/" class="fragment" target="_blank">Rock Solid Emails</a></p>
+				<p><a href="https://litmus.com/community/learning/24-how-to-code-a-responsive-email-from-scratc" class="fragment" target="_blank">Maquetando email de 0 (1/2)</a></p>
+				<p><a href="https://emailmonks.com/blog/email-coding/step-step-guide-create-html-email" class="fragment" target="_blank">Maquetando email de 0 (1/2)</a></p>
+				<p><a href="https://emailmonks.com/blog/email-coding/email-rendering-issues-in-outlook-and-hacks" class="fragment" target="_blank">Email Hacks</a></p>
+			</section>
+			<!-- links -->
+
+			<!-- reflexion -->
+			<section>
+				<p class="fragment">La reflexión:</p>
+				<p class="fragment">Nuestro trabajo no es solo aprender un proceo y ejecutarlo</p>
+				<p class="fragment">Nuestro trabajo es...</p>
+				<p class="fragment">Plantearnos los procesos</p>
+				<p class="fragment">Mejorar los procesos</p>
+				<p class="fragment">Definir nuevos procesos</p>
+				</section>
+			<!-- reflexion -->
+
+			<!-- END -->
+			<section>
+				<h1>¿PREGUNTAS?</h1>
+			</section>
+
+			<section>
+				<h1>GRACIAS</h1>
+			</section>
+			<!-- END -->
 		</div>
+	</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true,
+					callback: function () {
+						hljs.initHighlightingOnLoad();
+					}
+				}
+			]
+		});
+	</script>
+</body>
+
 </html>
